@@ -6,7 +6,7 @@
 #    By: plang <plang@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/04 14:40:11 by plang             #+#    #+#              #
-#    Updated: 2024/02/13 11:27:05 by plang            ###   ########.fr        #
+#    Updated: 2024/04/17 14:28:54 by plang            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,6 +46,7 @@ SRCS	= src/ft_isalpha.c \
 		src/ft_itoa.c \
 		src/ft_strmapi.c \
 		src/ft_striteri.c \
+		src/ft_skip_char.c \
 		src/ft_putchar_fd.c \
 		src/ft_putstr_fd.c \
 		src/ft_putendl_fd.c \

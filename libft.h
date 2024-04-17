@@ -6,7 +6,7 @@
 /*   By: plang <plang@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 14:31:03 by plang             #+#    #+#             */
-/*   Updated: 2024/01/10 10:30:20 by plang            ###   ########.fr       */
+/*   Updated: 2024/04/17 14:27:57 by plang            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,6 +85,7 @@ void		ft_lstadd_back(t_list **lst, t_list *new);
 void		ft_lstdelone(t_list *lst, void (*del)(void *));
 void		ft_lstclear(t_list **lst, void (*del)(void *));
 void		ft_lstiter(t_list *lst, void (*f)(void *));
+void		ft_skip_char(char **str, char c);
 
 /* ************************************************************************** */
 /*                              Printf functions                              */
