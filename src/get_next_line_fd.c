@@ -6,7 +6,7 @@
 /*   By: plang <plang@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/04 14:14:20 by plang             #+#    #+#             */
-/*   Updated: 2024/08/05 14:39:37 by plang            ###   ########.fr       */
+/*   Updated: 2024/08/27 11:34:06 by plang            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char	*get_next_line_fd(int fd)
 		s_buffer[fd][read_bytes] = '\0';
 		read_lines = ft_join(read_lines, s_buffer[fd]);
 	}
-	if (read_lines == '\0' || read_lines[0] == 0)
+	if (*read_lines == '\0' || read_lines[0] == '\0')
 		return (ft_free_gnl(read_lines, s_buffer[fd], read_bytes));
 	line = ft_get_line(read_lines);
 	temp = ft_get_remainder(read_lines);

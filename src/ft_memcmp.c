@@ -6,7 +6,7 @@
 /*   By: plang <plang@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 14:55:56 by plang             #+#    #+#             */
-/*   Updated: 2024/08/05 14:39:37 by plang            ###   ########.fr       */
+/*   Updated: 2024/08/27 11:36:58 by plang            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	i = 0;
 	if (n == 0)
 		return (0);
-	if (str1 == '\0' && str2 == '\0')
+	if (str1 == 0 && str2 == 0)
 		return (0);
 	while (str1[i] == str2[i] && i < n - 1)
 		i++;
