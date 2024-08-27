@@ -6,7 +6,7 @@
 /*   By: plang <plang@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/20 14:01:03 by plang             #+#    #+#             */
-/*   Updated: 2024/08/05 14:39:37 by plang            ###   ########.fr       */
+/*   Updated: 2024/08/27 11:46:54 by plang            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@ int	ft_format_specifier(char specifier, va_list args, int *ip)
 
 	count = 0;
 	if (specifier == 'c')
-		count += ft_putchar(va_arg(args, int), ip);
+		count += ft_pfputchar(va_arg(args, int), ip);
 	else if (specifier == 's')
-		count += ft_putstr(va_arg(args, char *), ip);
+		count += ft_pfputstr(va_arg(args, char *), ip);
 	else if (specifier == 'p')
 		count += ft_putpointer(va_arg(args, unsigned long), ip);
 	else if (specifier == 'd' || specifier == 'i')
@@ -32,8 +32,8 @@ int	ft_format_specifier(char specifier, va_list args, int *ip)
 	else if (specifier == 'X')
 		count += ft_puthex_base(va_arg(args, unsigned int), 1, ip);
 	else if (specifier == '%')
-		count += ft_putchar('%', ip);
+		count += ft_pfputchar('%', ip);
 	else
-		count += ft_putchar(specifier, ip);
+		count += ft_pfputchar(specifier, ip);
 	return (count);
 }

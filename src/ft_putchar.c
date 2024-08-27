@@ -5,21 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: plang <plang@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/20 17:32:03 by plang             #+#    #+#             */
-/*   Updated: 2024/08/05 14:39:37 by plang            ###   ########.fr       */
+/*   Created: 2024/08/27 11:48:09 by plang             #+#    #+#             */
+/*   Updated: 2024/08/27 11:52:51 by plang            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-int	ft_putchar(char c, int *ip)
+void	ft_putchar(char c)
 {
-	if (*ip == -1)
-		return (-1);
-	if (write (1, &c, 1) == -1)
-	{
-		*ip = -1;
-		return (-1);
-	}
-	return (1);
+	write(1, &c, 1);
 }

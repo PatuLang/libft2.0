@@ -6,7 +6,7 @@
 /*   By: plang <plang@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/19 13:08:35 by plang             #+#    #+#             */
-/*   Updated: 2024/08/05 14:39:37 by plang            ###   ########.fr       */
+/*   Updated: 2024/08/27 11:46:54 by plang            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	ft_printf(const char *format, ...)
 			format++;
 		}
 		else
-			count += ft_putchar(*(format++), &ip);
+			count += ft_pfputchar(*(format++), &ip);
 		if (ip == -1)
 		{
 			va_end(args);

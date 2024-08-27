@@ -5,26 +5,23 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: plang <plang@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/21 08:46:51 by plang             #+#    #+#             */
-/*   Updated: 2024/08/05 14:39:37 by plang            ###   ########.fr       */
+/*   Created: 2024/08/27 11:48:16 by plang             #+#    #+#             */
+/*   Updated: 2024/08/27 11:53:04 by plang            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-int	ft_putstr(char *str, int *ip)
+void	ft_putstr(char *str)
 {
 	int	i;
-	int	count;
 
 	i = 0;
-	count = 0;
 	if (!str)
-		return (ft_putstr("(null)", ip));
+		return ;
 	while (str[i] != '\0')
 	{
-		count += ft_putchar(str[i], ip);
+		write(1, &str[i], 1);
 		i++;
 	}
-	return (count);
 }

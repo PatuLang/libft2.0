@@ -1,28 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putunsig.c                                      :+:      :+:    :+:   */
+/*   ft_pfputchar.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: plang <plang@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/23 12:31:49 by plang             #+#    #+#             */
-/*   Updated: 2024/08/27 11:46:54 by plang            ###   ########.fr       */
+/*   Created: 2023/11/20 17:32:03 by plang             #+#    #+#             */
+/*   Updated: 2024/08/27 11:47:19 by plang            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-int	ft_putunsig(unsigned int c, int *ip)
+int	ft_pfputchar(char c, int *ip)
 {
-	int	count;
-
-	count = 0;
-	if (c > 9)
+	if (*ip == -1)
+		return (-1);
+	if (write (1, &c, 1) == -1)
 	{
-		count += ft_putunsig(c / 10, ip);
-		count += ft_putunsig(c % 10, ip);
+		*ip = -1;
+		return (-1);
 	}
-	else
-		count += ft_pfputchar(c + 48, ip);
-	return (count);
+	return (1);
 }

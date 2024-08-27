@@ -6,7 +6,7 @@
 #    By: plang <plang@student.hive.fi>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/04 14:40:11 by plang             #+#    #+#              #
-#    Updated: 2024/08/27 11:29:47 by plang            ###   ########.fr        #
+#    Updated: 2024/08/27 11:46:03 by plang            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,11 +62,11 @@ SRCS	= src/ft_isalpha.c \
 		src/ft_lstiter.c \
 		src/ft_format_specifier.c \
 		src/ft_printf.c \
-		src/ft_putchar.c \
+		src/ft_pfputchar.c \
 		src/ft_puthex_base.c \
 		src/ft_putint_base.c \
 		src/ft_putpointer.c \
-		src/ft_putstr.c \
+		src/ft_pfputstr.c \
 		src/ft_putunsig.c \
 		src/get_next_line.c \
 		src/get_next_line_utils.c \

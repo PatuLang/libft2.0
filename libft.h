@@ -6,7 +6,7 @@
 /*   By: plang <plang@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 14:31:03 by plang             #+#    #+#             */
-/*   Updated: 2024/08/27 11:29:27 by plang            ###   ########.fr       */
+/*   Updated: 2024/08/27 11:46:54 by plang            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,11 +92,11 @@ void		ft_skip_char(char **str, char c);
 /*                              Printf functions                              */
 /* ************************************************************************** */
 
-int			ft_putchar(char c, int *ip);
+int			ft_pfputchar(char c, int *ip);
 int			ft_puthex_base(unsigned long c, int caps, int *ip);
 int			ft_putint_base(int c, int *ip);
 int			ft_putpointer(unsigned long adress, int *ip);
-int			ft_putstr(char *str, int *ip);
+int			ft_pfputstr(char *str, int *ip);
 int			ft_putunsig(unsigned int c, int *ip);
 int			ft_format_specifier(char specifier, va_list args, int *ip);
 int			ft_printf(const char *format, ...);
